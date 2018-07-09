@@ -1,4 +1,4 @@
-package main.handler;
+package main.handler.clienthandler;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
@@ -6,10 +6,10 @@ import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
-import static main.utility.Log.*;
+import static main.utility.Log.info;
 
 @Component
-public class MyHandler extends TextWebSocketHandler {
+public class MyHandlerForPerConnection extends TextWebSocketHandler {
 
 
 
